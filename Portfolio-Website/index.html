@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh | Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lexend:wght@100..900&family=Libertinus+Keyboard&family=Michroma&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar" id="nav-bar">
+        <a href="#" class="nav active">Home</a>
+        <a href="#About" class="nav">About</a>
+        <label class="myname">Ganesh.</label>
+        <a href="#Projects" class="nav">Projects</a>
+        <a href="#contact" class="nav">Contact</a>
+    </nav>
+    <div class="mobile-btn">
+    <button class="button-btn" id="menu-button">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    </div>
+    <header id="Home">
+            
+        <div class="header">
+            <span class="h4"><h4>Hello!</h4></span>
+            <h1>I'm <span class="name">Ganesh</span>,</h1> <br>
+            <h1 class="text-wrapper">
+                Web Developer
+            </h1>
+        </div>
+        
+        <div class="middle">
+        <div class="right">
+            <h3>''</h3>
+            <p>Aspiring Developer | Building my journey</p>
+        </div>
+        <div class="left">
+            <h3>''</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </div>
+        </div>
+        <div class="ecllips">
+            <span class="circle"></span>
+            <img class = "profile" src="./img/profile.png" alt="profile">
+            <div class="button">
+                <a href="#Projects" class="active btn">Projects <i class="fa-solid fa-arrow-up-right-from-square thin-icon"></i></a>
+                <a href="#contact" class="btn">HireMe</a>
+            </div>
+        </div>
+    </header>
+    <section id="About">
+        <div class="container">
+        <div class="content-section">
+            <div class="title">
+                <h2>About Me</h2>
+            </div>
+            <div class="content">
+                <p>Hello! I'm Ganesh, a Computer Science graduate passionate about technology and
+                    problem-solving. I'm currently sharpening my skills in Data Sructures & Algorithms and learning
+                    modern web development. I have experience with HTML, CSS, JavaScript and I'm exploring React and Backend
+                    technologies to become a full-stack developer.
+                My goal is to create impactful projects, contribute to the tech community, and eventually
+                    build my own online products.</p>
+                <div class="btn-download">
+                    <a href="./resume/Ganesh-Resume.pdf" download class="btn-down">Download Resume</a>
+                </div>
+            </div>
+            <div class="social">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+            </div>
+        <div class="image-section">
+            <img src="./img/profile-pic.png" alt="Ganesh" class="profile-img">
+        </div>
+    </div>
+    </section> 
+    <section id="Projects">
+        <div class="container-proj">
+            <div class="title-proj">
+                <h2>Projects</h2>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="./img/work-1.PNG" alt="work">
+                        <div class="card-icon">
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <h3>To-Do-App</h3>
+                    <p>Build a simple task manager using JavaScript <br> and store the tasks in localStorage</p>
+                </div>
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="./img/work-2.PNG" alt="work">
+                        <div class="card-icon">
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <h3>Weather App</h3>
+                    <p>Check live weather using an API, and view <br> the weather of any city you enter.</p>
+                </div>
+                <div class="card">
+                    <div class="cardimg">
+                        <img src="./img/work-2.PNG" alt="work">
+                        <div class="card-icon">
+                            <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <h3>Weather App</h3>
+                    <p>Check live weather using an API, and view <br> the weather of any city you enter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contact-left myform">
+                <div class="contact-left-title">
+                    <h2 class="title">Lets connect here</h2>
+                    <hr>
+                </div>
+                <input type="hidden" name="access_key" value="a651068d-c0b5-428c-932b-d09dc177baab">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your  Message" class="contact-inputs" required></textarea>
+                <button type="submit" class="submit">Submit</button>
+            </form>
+            <div class="contact-right">
+                <img src="./img/contact-img.png" class="contact-img" alt="contact-img">
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href=""><i class="fa-brands fa-square-facebook"></i></i></a>
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+        </div>
+        <ul class="list">
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <p class="copyright">© Ganesh | All Rights Reverseved</p>
+    </footer>
+
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

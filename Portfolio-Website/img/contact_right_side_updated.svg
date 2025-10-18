@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <!-- Transparent background -->
+  <rect width="1200" height="800" fill="transparent"/>
+
+  <!-- Large abstract shape (background accent, unchanged) -->
+  <path d="M520 120 C700 40, 980 80, 980 300 C980 520, 720 680, 520 640 C320 600, 300 360, 520 120 Z"
+        fill="#DFF5B8" />
+
+  <!-- Envelope (left) -->
+  <g transform="translate(90,210) scale(0.9)">
+    <rect x="0" y="0" width="360" height="240" rx="16" stroke="#B4E15D" stroke-width="14" fill="transparent"/>
+    <path d="M0 0 L180 120 L360 0" stroke="#B4E15D" stroke-width="12" fill="none" />
+  </g>
+
+  <!-- Speech bubble above envelope (unchanged, keep green fill) -->
+  <g transform="translate(140,100) scale(0.9)">
+    <path d="M20 10 h220 a50 50 0 0 1 50 50 v40 a50 50 0 0 1 -50 50 h-120 l-40 30 v-30 h-60 a50 50 0 0 1 -50 -50 v-40 a50 50 0 0 1 50 -50 z"
+          fill="#7CBF28" />
+    <circle cx="120" cy="70" r="12" fill="#ffffff" />
+    <circle cx="150" cy="70" r="12" fill="#ffffff" />
+    <circle cx="90" cy="70" r="12" fill="#ffffff" />
+  </g>
+
+  <!-- Laptop (front) -->
+  <g transform="translate(360,420) scale(1.05)">
+    <rect x="0" y="0" width="440" height="260" rx="12" stroke="#B4E15D" stroke-width="14" fill="transparent"/>
+    <rect x="24" y="22" width="392" height="196" rx="8" fill="#ffffff" />
+    <rect x="0" y="266" width="440" height="14" rx="6" fill="#B4E15D" />
+    <circle cx="368" cy="130" r="18" fill="#B4E15D" />
+  </g>
+
+  <!-- Location pin (right) -->
+  <g transform="translate(980,320) scale(0.8)">
+    <path d="M48 0C72 0 92 20 92 44c0 38-44 92-44 92S4 82 4 44C4 20 24 0 48 0z" stroke="#B4E15D" stroke-width="14" fill="transparent"/>
+    <circle cx="48" cy="44" r="18" fill="#B4E15D"/>
+  </g>
+
+  <!-- Person: torso, dress, hair -->
+  <g transform="translate(680,240) scale(1.0)">
+    <!-- torso/dress -->
+    <path d="M120 220 C80 220, 40 260, 40 300 v40 h240 v-40 c0 -40 -40 -80 -160 -80 z" stroke="#B4E15D" stroke-width="14" fill="transparent"/>
+    <!-- neck -->
+    <rect x="150" y="160" width="40" height="28" rx="8" fill="#DFF5B8"/>
+    <!-- head -->
+    <circle cx="170" cy="120" r="60" fill="#DFF5B8"/>
+    <!-- hair -->
+    <path d="M230 118 C230 78, 210 60, 170 60 C130 60, 110 78, 110 118 C110 158, 130 180, 170 180 C210 180, 230 158, 230 118 z" stroke="#B4E15D" stroke-width="12" fill="transparent"/>
+    <!-- face features -->
+    <circle cx="152" cy="118" r="6" fill="#7CBF28"/>
+    <circle cx="188" cy="118" r="6" fill="#7CBF28"/>
+    <path d="M152 140 q18 12 36 0" stroke="#7CBF28" stroke-width="4" stroke-linecap="round" fill="none"/>
+  </g>
+
+  <!-- Subtle shadow under laptop -->
+  <ellipse cx="580" cy="720" rx="280" ry="30" fill="#000000" opacity="0.06"/>
+</svg>

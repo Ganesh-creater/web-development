@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(145deg, #F5F5F0,#E6D8C3);
+}
+.counter{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.counter-content {
+    text-align: center;
+}
+.counter-content .count, .reset, .minus {
+    padding: 10px 20px;
+    color: #F5F5F0;
+    background-color: #696FC7;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.counter-content .count:active, .reset:active, .minus:active {
+    transform: scale(.75);
+    transition: transform .075s ease-in-out;
+}

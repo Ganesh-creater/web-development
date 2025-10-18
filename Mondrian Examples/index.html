@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sample</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            height: 951px;
+            width: 775px;
+            background-color: #000;
+            display: grid;
+            grid-template-columns: 320px 200px 200px 28px;
+            grid-template-rows: 414px 130px 155px 225px;
+            gap: 9px;
+        }
+        .item {
+            background-color: #F0F1EC;
+        }
+        .blue {
+            background-color: blue;
+        }
+        .brown {
+            background-color: brown;
+            grid-column: span 2;
+        }
+        .white1 {
+            grid-area: 4/1/5/2;
+        }
+        .white2 {
+            grid-area: 2/1/4/2;
+        }
+        .white3 {
+            grid-area: 2/3/3/4;
+        }
+        .yellow {
+            background-color: yellow;
+            grid-area: 3/4/5;
+        }
+        .red {
+            background-color: red;
+            grid-area: 2/4/3/5;
+            border-bottom: 10px solid #000;
+        }
+        .green {
+            background-color: green;
+            grid-area: 2/2/5/3;
+        }
+        .white4 {
+            grid-area: 3/3/5/4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item blue"></div>
+        <div class="item brown"></div>
+
+        <div class="item white1"></div>
+        <div class="item green"></div>
+        <div class="item white2"></div>
+        <div class="item red"></div>
+
+        <div class="item white3"></div>
+        <div class="item white4"></div>
+        <div class="item yellow"></div>
+    </div>
+</body>
+</html>

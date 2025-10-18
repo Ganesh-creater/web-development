@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Blacksmithgamer</title>
+    </head>
+    <body>
+        <button id="sj">1</button>
+    </body>
+    <script>
+        /* let element = document.querySelector('h1');
+        element.textContent = " Ganesh Mrugan ";
+        element.innerHTML += `<p id='para'>Hi Hi Hi </p>`;
+        element.className = 'bodyClass';
+        element.style.color = 'red';
+        element.style.backgroundColor = 'Yellow';
+        element.style.height = '200px';
+        element.style.width = '200px';
+        element.style.borderRadius = '50%';
+        element.style.position = 'relative';
+        element.style.padding = '100px';
+        let para = document.getElementById('para');
+        para.style.position = 'absolute';
+        console.log(element); */
+        
+        /* let element = document.querySelector('h1');
+        let para = document.createElement('p');
+        para.id = 'pid';
+        para.textContent = 'Hello World';
+        /* element.append(para); */ // add in last line
+        /* let div = document.querySelector('div');
+        div.append(para);
+        element.prepend(para); //add in first line
+        console.log(para); */
+        
+        let btn = document.getElementById('sj');
+        /* btn.addEventListener('click', (event)=>{
+            btn.textContent= 'Aana Illa';
+            console.log('Clicked');
+        });
+
+        btn.addEventListener('mouseover', (event)=>{
+            btn.textContent = 'oruvela irukumo';
+            console.log('mouse-hovered');
+        });
+
+        btn.addEventListener('mouseout', (event)=>{
+            btn.textContent = 'iruku';
+            console.log('mouse-out');
+        }); */
+
+        /* document.addEventListener('keydown', (event)=>{
+            console.log(event.key);
+            switch(event.key) {
+                case 'ArrowUp':
+                    btn.textContent = Number(btn.textContent)+1;
+                    break;
+                case 'ArrowDown':
+                    btn.textContent = Number(btn.textContent)-1;
+                    break;
+            }
+        }); */
+
+        btn.addEventListener('click', (event)=>{
+            btn.style.backgroundColor = 'yellow';
+            btn.style.color = 'white';
+            btn.style.border = 'none';
+            console.log('Clicked');
+        });
+
+    </script>
+</html>

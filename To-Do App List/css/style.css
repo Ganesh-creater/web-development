@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3B38A0, #EA5B6F);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
+    background-color: #f5F5F5;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 5px;
+}
+.todo-app h2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.todo-app img {
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+}
+.row {
+    position: relative;
+    width: 100%;
+    background-color: #E0D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+.row input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+}
+.row button {
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background-color: #7A85C1;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.row button:active {
+    transform: scaleX(0.95);
+    transition: transform 0.1s ease-in-out;
+}
+#list-container li{
+    position: relative;
+    margin-bottom: 15px;
+    list-style: none;
+    cursor: pointer;
+}
+#list-container li::before {
+    font-family: 'FontAwesome';
+    content: '\f111';
+    color: #fff;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#list-container li.check {
+    text-decoration: line-through;
+    color: #636363;
+}
+
+#list-container li.check::before {
+    font-family: 'FontAwesome';
+    content: '\f058';
+    color: #7A85C1;
+    border-radius: 50%;
+    text-decoration: inherit;
+    margin-right: 10px;
+}
+
+#list-container li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#list-container li span:hover {
+    background: #edeef0;
+}

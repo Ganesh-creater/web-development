@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #B6CEB4 50%,#D9E9CF 50%);
+}
+.main-container {
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 30px 50px #5553;
+    padding: 30px;
+}
+.main-container form {
+    width: 100%;
+    border: 1px solid #5553;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+.main-container form input, button {
+    border: none;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+}

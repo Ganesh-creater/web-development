@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.galaxy {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../image/5432383.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#ufo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 130px;
+}

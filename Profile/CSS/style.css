@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Biryani", sans-serif;
+}
+body {
+    height: 100vh;
+    background: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+.navbar-links ul li{
+    display: inline-block;
+    padding-right: 25px;
+}
+.navbar-links ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #0C0C0C;
+    font-weight: 600;
+    transition: 1s;
+}
+.navbar-links ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #0C0C0C;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -0.2px;
+    transition: 0.5s;
+}
+.navbar-links ul li a:hover:after {
+    width: 100%;
+}
+.container {
+    display: flex;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+.profile-picture {
+    width: 50%;
+}
+.about-me {
+    display: grid;
+    place-content: center;
+    width: 50%;
+    padding: 0 150px;
+    font-size: 1.5rem;
+}
+.about-me p {
+    margin-top: 30%;
+}
+.circle1 {
+    position: absolute;
+    top: 31%;
+    left: 8%;
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(230deg, rgba(121, 147, 81, 1), rgba(161, 221, 112, 1));
+    border-radius: 50%;
+}
+.circle2 {
+    position: absolute;
+    top: 60%;
+    left: 0;
+    height: 400px;
+    width: 400px;
+    background: linear-gradient(230deg, rgba(121, 147, 81, 1), rgba(161, 221, 112, 1));
+    border-radius: 50%;
+}
+.circle3 {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(230deg, rgba(121, 147, 81, 1), rgba(161, 221, 112, 1));
+    border-radius: 50%;
+}

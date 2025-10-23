@@ -63,7 +63,7 @@ submit.addEventListener('submit', function(event) {
     this.classList.add('action');
 })
 
-// Lenis smooth scrolling
+/* // Lenis smooth scrolling
 const lenis = new Lenis();
 
 lenis.on('scroll', (e) => {
@@ -75,4 +75,25 @@ lenis.raf(time)
 requestAnimationFrame(raf)
 }
 
-requestAnimationFrame(raf);
+requestAnimationFrame(raf); */
+
+if (window.Lenis) {
+      // Disable native smooth scroll once Lenis is active
+      document.documentElement.style.scrollBehavior = 'auto';
+
+      const lenis = new Lenis({
+        duration: 1.2,
+        easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      });
+
+      lenis.on('scroll', (e) => {
+        // console.log(e)
+      });
+
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+
+      requestAnimationFrame(raf);
+    }
